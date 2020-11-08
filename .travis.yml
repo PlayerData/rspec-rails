@@ -48,6 +48,7 @@ matrix:
       env: RAILS_VERSION='6.1.0.rc1'
     - rvm: 2.5.8
       env: RAILS_VERSION='6.1.0.rc1'
+    - rvm: jruby-9.2.13.0
       jdk: oraclejdk11
       env:
         - RAILS_VERSION='6.1.0.rc1'
@@ -55,7 +56,7 @@ matrix:
         - JAVA_OPTS="--add-opens java.base/sun.nio.ch=org.jruby.dist --add-opens java.base/java.io=org.jruby.dist --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.security.cert=ALL-UNNAMED --add-opens=java.base/java.util.zip=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.util.regex=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/javax.crypto=ALL-UNNAMED --add-opens=java.management/sun.management=ALL-UNNAMED"
 
     # Rails 6.0 builds >= 2.5.0
-    - rvm: jruby-head
+    - rvm: jruby-9.2.13.0
       jdk: oraclejdk11
       env:
         - RAILS_VERSION='~> 6.0.0'
@@ -72,7 +73,7 @@ matrix:
       env: RAILS_VERSION='~> 6.0.0'
 
     # Rails 5.2 builds >= 2.2.2
-    - rvm: jruby-head
+    - rvm: jruby-9.2.9.0
       jdk: oraclejdk11
       env:
         - RAILS_VERSION='~> 5.2.0'
